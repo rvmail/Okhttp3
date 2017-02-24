@@ -21,7 +21,6 @@ public abstract class BaseCallback<T> {
         Type superclass = subclass.getGenericSuperclass();
         if (superclass instanceof Class) {
 //            throw new RuntimeException("Missing type parameter.");
-            Log.i("","");
             return null;
         }
         ParameterizedType parameterized = (ParameterizedType) superclass;
