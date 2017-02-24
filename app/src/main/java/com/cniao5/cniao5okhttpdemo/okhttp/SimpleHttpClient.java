@@ -73,6 +73,7 @@ public class SimpleHttpClient {
 
         Uri.Builder builder = Uri.parse(mBuilder.url).buildUpon();
 
+        Log.i("","");
         for (RequestParam  p: mBuilder.mParams) {
 
             builder.appendQueryParameter(p.getKey(),p.getObj()==null?"":p.getObj().toString());
